@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
+  }  
+
+  .section {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .left-column {
+    padding: 0px;
+    background-color: #68345fbf;
+    color: black;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-column {
+    padding: 0px;
+    width: 60%;
+    margin: 20px;
+  }
+
+  .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#contacts, #skills, #education, #languages, #work-experience, #courses, #profile {
+    margin: 20px;
+}
+
+ul {
+    margin: 20px;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 0px;
+    border-radius: 3px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 0 0 1px 0;
+}
+
+#name, #position {
+    text-align: center;
+    margin: auto;
+    margin: 10px 5px 0 0;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+#contacts h4, #skills h4, #languages h4 {
+    text-align: center;
+}
+
+header img {
+    border: 10px solid rgba(93, 38, 88, 0.671);
+    border-radius: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.right-column h4 {
+    flex: 1;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(71, 6, 55);
+}  
+
+.left-column h4 {
+    flex: 1;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+#contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .left-column {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+}
